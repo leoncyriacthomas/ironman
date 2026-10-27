@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVENGERS CLUB // Recruitment Initiative | Earth Needs You</title>
+  
+  <!-- SEO & Social Metadata -->
+  <meta name="description" content="Official recruitment portal for the Avengers Club: a premier collegiate student collective developing leadership, tech, creative media, competitive esports, and campus impact. Earth needs you." />
+  <meta name="keywords" content="Avengers Club, College Recruitment, Student Organization, Tech Lab, Leadership, Innovation, Creative Studio, Esports" />
+  <meta name="theme-color" content="#05070a" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AVENGERS CLUB // Earth Needs You" />
+  <meta property="og:description" content="Not born a hero. Built as a team. Join the premiere collegiate innovation & leadership initiative." />
+  <meta property="og:image" content="assets/hero-command-center.jpg" />
+
+  <!-- Favicon: Hex-Shield -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,4 92,26 92,74 50,96 8,74 8,26' fill='%23080d16' stroke='%2300f0ff' stroke-width='4'/%3E%3Cpath d='M50 18 L74 78 L60 78 L54 62 L40 62 L40 50 L50 50 L46 38 L38 62 L26 78 Z' fill='%23ffffff'/%3E%3Cpolygon points='50,14 55,24 45,24' fill='%23ff1e56'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23ff1e56' stroke-dasharray='4 8' stroke-width='1.5'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Orbitron, Syne, Space Mono, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background HUD Grid & Ambient Glows -->
+  <div class="hud-bg-grid" aria-hidden="true"></div>
+  <div class="hud-ambient-glow glow-cyan-top" aria-hidden="true"></div>
+  <div class="hud-ambient-glow glow-crimson-mid" aria-hidden="true"></div>
+  <div class="hud-ambient-glow glow-blue-bot" aria-hidden="true"></div>
+
+  <!-- Tactical Ambient Cursor Spotlight -->
+  <div id="tactical-cursor-glow" class="tactical-cursor-glow" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       NAVIGATION
+       ====================================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-wrapper">
+      <!-- Brand Wordmark & Emblem -->
+      <a href="#hero" class="brand-link" aria-label="Avengers Club - Return to top">
+        <div class="brand-shield">
+          <svg viewBox="0 0 100 100">
+            <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#080d16" stroke="#00f0ff" stroke-width="4"></polygon>
+            <circle cx="50" cy="50" r="34" fill="none" stroke="rgba(0, 240, 255, 0.25)" stroke-dasharray="3 6"></circle>
+            <path d="M50 20 L72 76 L58 76 L53 62 L42 62 L39 76 L28 76 Z M50 34 L45 52 L52 52 Z" fill="#ffffff"></path>
+            <polygon points="50,14 55,22 45,22" fill="#ff1e56"></polygon>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>AVENGERS <span>CLUB</span></h1>
+          <span class="brand-sub">INITIATIVE // RECRUITMENT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#activities">ACTIVITIES</a></li>
+          <li><a href="#team">OUR TEAM</a></li>
+          <li><a href="#recruitment">RECRUITMENT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <!-- Sound Toggle -->
+        <button id="sound-toggle-btn" class="btn-sound-toggle" title="Toggle Tactical Audio Feedback" aria-label="Toggle Sound">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span id="sound-status-text">AUDIO OFF</span>
+        </button>
+
+        <!-- CTA -->
+        <a href="#recruitment" class="btn btn-primary clip-chamfer">
+          <span>JOIN THE TEAM</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <ul>
+        <li><a href="#hero"><span>HOME</span> <span class="font-mono">01</span></a></li>
+        <li><a href="#about"><span>ABOUT</span> <span class="font-mono">02</span></a></li>
+        <li><a href="#activities"><span>ACTIVITIES</span> <span class="font-mono">03</span></a></li>
+        <li><a href="#team"><span>OUR TEAM</span> <span class="font-mono">04</span></a></li>
+        <li><a href="#recruitment"><span>RECRUITMENT</span> <span class="font-mono">05</span></a></li>
+        <li><a href="#faq"><span>FAQ &amp; CONTACT</span> <span class="font-mono">06</span></a></li>
+      </ul>
+      <div style="margin-top: 16px;">
+        <a href="#recruitment" class="btn btn-primary clip-chamfer" style="width: 100%;">
+          <span>JOIN THE TEAM // ENLIST</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       HERO SECTION
+       ====================================================================== -->
+  <section id="hero" class="hero-section" aria-label="Hero - Avengers Club Recruitment">
+    <div class="hero-bg-container">
+      <img src="assets/hero-command-center.jpg" alt="Avengers Club Tactical Command Center and Holographic Earth Display" class="hero-bg-img" />
+      <div class="hero-vignette"></div>
+    </div>
+
+    <div class="container hero-content">
+      <!-- Status Pill -->
+      <div class="hero-badge" role="status">
+        <span class="beacon"></span>
+        <span>AVENGERS INITIATIVE // RECRUITMENT OPEN</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-headline">
+        EARTH <span class="text-glow-cyan">NEEDS</span> YOU.
+      </h1>
+
+      <!-- Supporting Headline -->
+      <h2 class="hero-subheadline">
+        NOT BORN A HERO. BUILT AS A TEAM.
+      </h2>
+
+      <!-- Description -->
+      <p class="hero-desc">
+        Avengers Club brings together ambitious college students who want to build, lead, innovate, and make an impact. From autonomous tech prototypes and campus esports leagues to high-voltage festivals and community outreach—your mission begins here.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-ctas">
+        <a href="#recruitment" class="btn btn-primary clip-chamfer">
+          <span>JOIN THE INITIATIVE</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <a href="#about" class="btn btn-secondary clip-chamfer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+          <span>EXPLORE OUR MISSION</span>
+        </a>
+      </div>
+
+      <!-- Telemetry Cards -->
+      <div class="hero-telemetry-grid">
+        <div class="glass-panel corner-brackets telemetry-card">
+          <div class="telemetry-label">TACTICAL STATUS</div>
+          <div class="telemetry-val">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+            OPERATIONAL
+          </div>
+        </div>
+
+        <div class="glass-panel corner-brackets telemetry-card">
+          <div class="telemetry-label">ACTIVE CADETS</div>
+          <div class="telemetry-val">450+</div>
+        </div>
+
+        <div class="glass-panel corner-brackets telemetry-card">
+          <div class="telemetry-label">OPERATIONS</div>
+          <div class="telemetry-val">06 ACTIVE</div>
+        </div>
+
+        <div class="glass-panel corner-brackets telemetry-card">
+          <div class="telemetry-label">DEFENSE LEVEL</div>
+          <div class="telemetry-val">OMEGA-1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down to explore mission">
+      <span>DISCOVER // DOWN</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ======================================================================
+       ABOUT — 01 // THE INITIATIVE
+       ====================================================================== -->
+  <section id="about" class="section" aria-label="About the Avengers Club Initiative">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="beacon"></span>
+          <span>01 // THE INITIATIVE</span>
+        </div>
+        <h2 class="section-headline">
+          GREATNESS IS NEVER A <span class="text-glow-crimson">SOLO MISSION.</span>
+        </h2>
+      </div>
+
+      <!-- Editorial Grid: Story & Imagery -->
+      <div class="about-editorial-grid">
+        <div class="about-text-col">
+          <p class="lead-quote">
+            Avengers Club is an elite fictional collegiate student organization dedicated to forging tomorrow's leaders, engineers, creatives, and change-makers.
+          </p>
+
+          <p class="body-text">
+            Founded on the belief that raw potential requires relentless collaboration, our community bridges the gap between classroom theory and real-world impact. We assemble teams with complementary disciplines—pairing hardcore coders with visionary storytellers, and logistics architects with community champions—to execute missions no single student could achieve alone.
+          </p>
+
+          <!-- Telemetry Stats -->
+          <div class="about-stats-grid">
+            <div class="about-stat-item">
+              <div class="stat-val">450+</div>
+              <div class="stat-lbl">ACTIVE CADETS &amp; ALUMNI</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="stat-val">38+</div>
+              <div class="stat-lbl">PROJECTS &amp; DEPLOYMENTS</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="stat-val">$45K</div>
+              <div class="stat-lbl">ANNUAL GRANTS &amp; PRIZES</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="stat-val">2,800+</div>
+              <div class="stat-lbl">COMMUNITY SERVICE HOURS</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-media-col">
+          <div class="about-image-wrapper">
+            <img src="assets/mission-tactical-lab.jpg" alt="Avengers Club Tactical Innovation Lab and Robotics Workbench" loading="lazy" />
+            <div class="about-img-tag">RESEARCH_DECK // DEPLOYMENT_01</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Core Principles -->
+      <div>
+        <div class="section-label" style="margin-bottom: 24px; color: var(--titanium-400);">
+          <span>CORE DOCTRINE</span>
+        </div>
+
+        <div class="principles-grid">
+          <div class="glass-panel corner-brackets principle-card">
+            <div class="principle-header">
+              <span class="principle-num">01 // PRINCIPLE</span>
+              <div class="principle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="principle-title">THINK BEYOND LIMITS</h3>
+            <p class="principle-desc">
+              We dismantle self-imposed boundaries and explore unconventional technologies, daring ideas, and bold problem-solving methodologies.
+            </p>
+          </div>
+
+          <div class="glass-panel corner-brackets principle-card crimson">
+            <div class="principle-header">
+              <span class="principle-num">02 // PRINCIPLE</span>
+              <div class="principle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="principle-title">BUILD WITH PURPOSE</h3>
+            <p class="principle-desc">
+              Everything we engineer, design, or organize is targeted to solve real collegiate needs, uplift communities, and push technical boundaries.
+            </p>
+          </div>
+
+          <div class="glass-panel corner-brackets principle-card">
+            <div class="principle-header">
+              <span class="principle-num">03 // PRINCIPLE</span>
+              <div class="principle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="principle-title">WIN AS ONE</h3>
+            <p class="principle-desc">
+              Individual brilliance shines, but unified execution triumphs. We foster an inclusive brotherhood and sisterhood where trust is paramount.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       ACTIVITIES — 02 // OPERATIONS
+       ====================================================================== -->
+  <section id="activities" class="section" aria-label="Avengers Club Operations and Activities">
+    <div class="container">
+      <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
+        <div>
+          <div class="section-label">
+            <span class="beacon"></span>
+            <span>02 // OPERATIONS</span>
+          </div>
+          <h2 class="section-headline">
+            MORE THAN A CLUB. <span class="text-glow-cyan">A FORCE OF IDEAS.</span>
+          </h2>
+        </div>
+        <p style="color: var(--titanium-400); max-width: 440px; font-size: 14px;">
+          Six specialized divisions operating around the clock. Whether you build hardware, craft cinematic media, host epic tournaments, or direct campus-wide initiatives, there is a squad engineered for you.
+        </p>
+      </div>
+
+      <!-- Sector Filters -->
+      <div class="activities-filter-bar">
+        <span class="filter-title">FILTER SECTOR:</span>
+        <button class="filter-btn active" data-filter="ALL">ALL</button>
+        <button class="filter-btn" data-filter="ENGINEERING">ENGINEERING</button>
+        <button class="filter-btn" data-filter="CREATIVE">CREATIVE</button>
+        <button class="filter-btn" data-filter="OPERATIONS">OPERATIONS</button>
+        <button class="filter-btn" data-filter="ESPORTS">ESPORTS</button>
+      </div>
+
+      <!-- Asymmetrical Bento Grid -->
+      <div class="activities-bento-grid">
+        <!-- 1. TECH LAB (Featured Wide) -->
+        <div class="glass-panel corner-brackets activity-card featured" data-sector="ENGINEERING">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">ENGINEERING &amp; CYBERNETICS</span>
+              <span class="activity-num">01 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">TECH LAB</h3>
+                <span class="activity-sub">DEPLOYED DIVISION // CODING &amp; ROBOTICS</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              Coding, hardware engineering, autonomous robotics, AI hackathons, and cutting-edge software workshops that ship real products for collegiate and civic impact.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">Autonomous Systems</span>
+              <span class="tag-badge">Web3 / Cloud</span>
+              <span class="tag-badge">Full-Stack Dev</span>
+              <span class="tag-badge">IoT Hardware</span>
+            </div>
+            <button class="activity-action-btn" data-division="Tech Lab">
+              <span>ENLIST IN TECH LAB</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. GAME ARENA -->
+        <div class="glass-panel corner-brackets activity-card crimson" data-sector="ESPORTS">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">ESPORTS &amp; SIMULATION</span>
+              <span class="activity-num">02 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="12" x2="10" y2="12"></line>
+                  <line x1="8" y1="10" x2="8" y2="14"></line>
+                  <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                  <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">GAME ARENA</h3>
+                <span class="activity-sub">ESPORTS &amp; TOURNAMENTS</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              Inter-collegiate esports leagues, campus gaming championships, game design jams, and casual social gaming arenas for every skill tier.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">Esports Leagues</span>
+              <span class="tag-badge">Game Jams</span>
+              <span class="tag-badge">VR Labs</span>
+              <span class="tag-badge">LAN Battles</span>
+            </div>
+            <button class="activity-action-btn" data-division="Game Arena">
+              <span>ENLIST IN GAME ARENA</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. CREATIVE STUDIO -->
+        <div class="glass-panel corner-brackets activity-card" data-sector="CREATIVE">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">VISUAL &amp; MEDIA PRODUCTION</span>
+              <span class="activity-num">03 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="13.5" cy="6.5" r=".5"></circle>
+                  <circle cx="17.5" cy="10.5" r=".5"></circle>
+                  <circle cx="8.5" cy="7.5" r=".5"></circle>
+                  <circle cx="6.5" cy="12.5" r=".5"></circle>
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">CREATIVE STUDIO</h3>
+                <span class="activity-sub">DESIGN &amp; CINEMATOGRAPHY</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              Brand design, motion graphics, high-energy cinematography, 3D worldbuilding, and storytelling campaigns that capture imaginations.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">Cinematography</span>
+              <span class="tag-badge">3D Modeling</span>
+              <span class="tag-badge">UI/UX Design</span>
+              <span class="tag-badge">Motion FX</span>
+            </div>
+            <button class="activity-action-btn" data-division="Creative Studio">
+              <span>ENLIST IN CREATIVE STUDIO</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. EVENT OPERATIONS -->
+        <div class="glass-panel corner-brackets activity-card" data-sector="OPERATIONS">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">TACTICAL LOGISTICS</span>
+              <span class="activity-num">04 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">EVENT OPERATIONS</h3>
+                <span class="activity-sub">FESTIVALS &amp; PRODUCTIONS</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              Directing large-scale college festivals, tech summits, secret assembly rallies, and experiential campus spectacles from blueprint to stage.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">Campus Summits</span>
+              <span class="tag-badge">Stage Ops</span>
+              <span class="tag-badge">Sponsorships</span>
+              <span class="tag-badge">Live AV</span>
+            </div>
+            <button class="activity-action-btn" data-division="Event Operations">
+              <span>ENLIST IN EVENT OPERATIONS</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. COMMUNITY IMPACT -->
+        <div class="glass-panel corner-brackets activity-card crimson" data-sector="ESPORTS">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">CIVIC OUTREACH</span>
+              <span class="activity-num">05 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">COMMUNITY IMPACT</h3>
+                <span class="activity-sub">STEM &amp; SOCIAL GOOD</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              STEM mentorship programs for local high schools, charity hack marathons, sustainability drives, and philanthropic community missions.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">STEM Mentorship</span>
+              <span class="tag-badge">Charity Hack</span>
+              <span class="tag-badge">Eco Drives</span>
+              <span class="tag-badge">Civic Tech</span>
+            </div>
+            <button class="activity-action-btn" data-division="Community Impact">
+              <span>ENLIST IN COMMUNITY IMPACT</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. STRATEGY ROOM -->
+        <div class="glass-panel corner-brackets activity-card" data-sector="OPERATIONS">
+          <div>
+            <div class="activity-top">
+              <span class="activity-cat">LEADERSHIP &amp; TACTICS</span>
+              <span class="activity-num">06 // SEC</span>
+            </div>
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="22" y1="12" x2="18" y2="12"></line>
+                  <line x1="6" y1="12" x2="2" y2="12"></line>
+                  <line x1="12" y1="6" x2="12" y2="2"></line>
+                  <line x1="12" y1="22" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="activity-title">STRATEGY ROOM</h3>
+                <span class="activity-sub">LEADERSHIP SPRINTS</span>
+              </div>
+            </div>
+            <p class="activity-desc">
+              High-stakes crisis management simulations, case study competitions, public advocacy debates, and executive decision-making sprints.
+            </p>
+          </div>
+          <div>
+            <div class="activity-tags">
+              <span class="tag-badge">Crisis Labs</span>
+              <span class="tag-badge">Case Battles</span>
+              <span class="tag-badge">Venture Pitches</span>
+              <span class="tag-badge">Governance</span>
+            </div>
+            <button class="activity-action-btn" data-division="Strategy Room">
+              <span>ENLIST IN STRATEGY ROOM</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       TEAM — 03 // PERSONNEL
+       ====================================================================== -->
+  <section id="team" class="section" aria-label="Avengers Club Executive Personnel">
+    <div class="container">
+      <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
+        <div>
+          <div class="section-label">
+            <span class="beacon"></span>
+            <span>03 // PERSONNEL</span>
+          </div>
+          <h2 class="section-headline">
+            INDIVIDUAL TALENT. <span class="text-glow-crimson">COLLECTIVE POWER.</span>
+          </h2>
+        </div>
+        <div style="text-align: right;">
+          <span style="font-family: var(--font-mono); font-size: 11px; padding: 4px 10px; background: rgba(13, 19, 31, 0.9); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--titanium-400);">
+            DISCLAIMER: FICTIONAL STUDENT PROFILES
+          </span>
+        </div>
+      </div>
+
+      <!-- 5 Executive Profile Cards -->
+      <div class="team-grid">
+        <!-- 1. Tony Stark -->
+        <div class="glass-panel corner-brackets team-card" data-cadet="tony-stark" tabindex="0" role="button" aria-label="View Tony Stark dossier">
+          <div class="team-image-box">
+            <img src="assets/team-tony-stark.jpg" alt="Tony Stark - President" loading="lazy" />
+            <span class="team-callsign-badge">ARCHITECT</span>
+            <div class="team-inspect-overlay">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>INSPECT DOSSIER</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <div>
+              <span class="team-role">President</span>
+              <h3 class="team-name">Tony Stark</h3>
+              <div class="team-dept">Robotics &amp; Systems • Sr.</div>
+              <p class="team-bio">Hardware tinkerer, collegiate hackathon veteran, and serial builder dedicated to scalable student innovation.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-top: 12px; border-top: 1px solid var(--border-subtle); padding-top: 8px;">
+              <span>SPEC: Prototyping</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Steve Rogers -->
+        <div class="glass-panel corner-brackets team-card" data-cadet="steve-rogers" tabindex="0" role="button" aria-label="View Steve Rogers dossier">
+          <div class="team-image-box">
+            <img src="assets/team-steve-rogers.jpg" alt="Steve Rogers - Vice President" loading="lazy" />
+            <span class="team-callsign-badge">VANGUARD</span>
+            <div class="team-inspect-overlay">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>INSPECT DOSSIER</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <div>
+              <span class="team-role" style="color: var(--titanium-200);">Vice President</span>
+              <h3 class="team-name">Steve Rogers</h3>
+              <div class="team-dept">Strategic Governance • Sr.</div>
+              <p class="team-bio">Dedicated to campus leadership ethics, team cohesion, and organizing seamless multi-squad operations.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-top: 12px; border-top: 1px solid var(--border-subtle); padding-top: 8px;">
+              <span>SPEC: Team Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Natasha Romanoff -->
+        <div class="glass-panel corner-brackets team-card crimson" data-cadet="natasha-romanoff" tabindex="0" role="button" aria-label="View Natasha Romanoff dossier">
+          <div class="team-image-box">
+            <img src="assets/team-natasha-ops.jpg" alt="Natasha Romanoff - Operations Lead" loading="lazy" />
+            <span class="team-callsign-badge">SHADOW-1</span>
+            <div class="team-inspect-overlay">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>INSPECT DOSSIER</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <div>
+              <span class="team-role">Operations Lead</span>
+              <h3 class="team-name">Natasha Romanoff</h3>
+              <div class="team-dept">Information Systems • Jr.</div>
+              <p class="team-bio">Master coordinator handling rapid logistics, inter-club partnerships, and operational risk management.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-top: 12px; border-top: 1px solid var(--border-subtle); padding-top: 8px;">
+              <span>SPEC: Logistics Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Bruce Banner -->
+        <div class="glass-panel corner-brackets team-card" data-cadet="bruce-banner" tabindex="0" role="button" aria-label="View Bruce Banner dossier">
+          <div class="team-image-box">
+            <img src="assets/team-bruce-tech.jpg" alt="Bruce Banner - Technical Lead" loading="lazy" />
+            <span class="team-callsign-badge">SYNAPSE</span>
+            <div class="team-inspect-overlay">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>INSPECT DOSSIER</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <div>
+              <span class="team-role">Technical Lead</span>
+              <h3 class="team-name">Bruce Banner</h3>
+              <div class="team-dept">CS &amp; Neural AI • Grad</div>
+              <p class="team-bio">Architecting cloud infrastructure, competitive coding drills, and open-source college platforms.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-top: 12px; border-top: 1px solid var(--border-subtle); padding-top: 8px;">
+              <span>SPEC: Distributed AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Peter Parker -->
+        <div class="glass-panel corner-brackets team-card crimson" data-cadet="peter-parker" tabindex="0" role="button" aria-label="View Peter Parker dossier">
+          <div class="team-image-box">
+            <img src="assets/team-peter-design.svg" alt="Peter Parker - Media & Design Lead" loading="lazy" />
+            <span class="team-callsign-badge">SPECTER</span>
+            <div class="team-inspect-overlay">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>INSPECT DOSSIER</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <div>
+              <span class="team-role">Media &amp; Design Lead</span>
+              <h3 class="team-name">Peter Parker</h3>
+              <div class="team-dept">Visual Communications • So.</div>
+              <p class="team-bio">Passionate storyteller crafting futuristic visual identities, AR web experiences, and campaign teasers.</p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-top: 12px; border-top: 1px solid var(--border-subtle); padding-top: 8px;">
+              <span>SPEC: UI/UX &amp; Media</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Classified Cadet Dossier -->
+  <div id="cadet-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+    <div class="glass-panel corner-brackets modal-box">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close cadet dossier">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="section-label" style="margin-bottom: 8px;">
+        <span class="beacon"></span>
+        <span>PERSONNEL DOSSIER // CLEARANCE LEVEL: 5</span>
+      </div>
+
+      <div class="modal-cadet-layout">
+        <div class="modal-cadet-img">
+          <img id="modal-img" src="assets/team-tony-stark.jpg" alt="Cadet portrait" />
+        </div>
+        <div>
+          <h3 id="modal-name" style="font-size: 24px; margin-bottom: 4px;">TONY STARK</h3>
+          <div id="modal-role" style="font-family: var(--font-mono); font-size: 12px; color: var(--cyan-core); font-weight: 700; margin-bottom: 6px;">PRESIDENT // CALLSIGN: ARCHITECT</div>
+          <div id="modal-dept" style="font-family: var(--font-mono); font-size: 11px; color: var(--titanium-400);">Robotics &amp; Systems • Senior</div>
+          <p id="modal-bio" style="font-size: 13px; color: var(--titanium-300); margin-top: 10px; line-height: 1.6;">Cadet biography...</p>
+        </div>
+      </div>
+
+      <div style="padding: 14px; background: rgba(5, 7, 10, 0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 12px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+          <span style="color: var(--titanium-500);">CORE SPECIALTY:</span>
+          <span id="modal-specialty" style="color: #ffffff;">Mechatronic Prototyping</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--titanium-500);">CAMPUS ASSIGNMENT:</span>
+          <span style="color: var(--cyan-core);">Cadet Selection Cohort 2026</span>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button id="modal-dismiss-btn" class="btn btn-secondary clip-chamfer" style="padding: 8px 18px; font-size: 11px;">DISMISS</button>
+        <button id="modal-apply-btn" class="btn btn-primary clip-chamfer" style="padding: 8px 18px; font-size: 11px;">APPLY TO THEIR DIVISION</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       RECRUITMENT — 04 // YOUR NEXT CHAPTER
+       ====================================================================== -->
+  <section id="recruitment" class="section" aria-label="Avengers Club Recruitment Application Portal">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 760px; margin: 0 auto 60px;">
+        <div class="section-label crimson">
+          <span class="beacon"></span>
+          <span>04 // YOUR NEXT CHAPTER</span>
+        </div>
+        <h2 class="section-headline" style="margin: 0 auto 16px;">
+          THE NEXT AVENGER <span class="text-glow-crimson">COULD BE YOU.</span>
+        </h2>
+        <p style="font-family: var(--font-heading); font-size: 18px; color: #ffffff; margin-bottom: 8px;">
+          "You don't need superpowers. You need curiosity, courage, and the willingness to make a difference."
+        </p>
+        <p style="font-size: 14px; color: var(--titanium-400);">
+          Applications are open to all enrolled students across all majors and experience levels. Complete the classified transmission dossier below.
+        </p>
+      </div>
+
+      <!-- 3-Phase Process Timeline -->
+      <div class="recruitment-timeline">
+        <div class="glass-panel timeline-step">
+          <div class="step-bubble">01</div>
+          <h3 class="step-title">APPLY</h3>
+          <span class="step-phase">DIGITAL TRANSMISSION</span>
+          <p class="step-desc">Submit your recruitment dossier with your division interests, skills, and vision for the team.</p>
+        </div>
+
+        <div class="glass-panel timeline-step">
+          <div class="step-bubble" style="border-color: var(--crimson-core); box-shadow: 0 0 15px var(--crimson-glow);">02</div>
+          <h3 class="step-title">CONNECT</h3>
+          <span class="step-phase" style="color: var(--crimson-core);">TACTICAL ALIGNMENT</span>
+          <p class="step-desc">Join us for a friendly 20-minute chat and a collaborative mini-sprint with division leads.</p>
+        </div>
+
+        <div class="glass-panel timeline-step">
+          <div class="step-bubble">03</div>
+          <h3 class="step-title">JOIN THE INITIATIVE</h3>
+          <span class="step-phase">SECURITY BADGE ISSUED</span>
+          <p class="step-desc">Receive your division assignment, access our private Discord command deck, and begin your first mission.</p>
+        </div>
+      </div>
+
+      <!-- Application Container -->
+      <div class="recruitment-form-container">
+        <!-- Transmission Progress -->
+        <div id="transmission-progress-box" class="transmission-progress-box">
+          <div class="progress-status-bar">
+            <span id="transmission-status-label">ENCRYPTING TRANSMISSION...</span>
+            <span id="transmission-pct">15%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="transmission-progress-bar" class="progress-bar-fill"></div>
+          </div>
+        </div>
+
+        <!-- Success Confirmation Card -->
+        <div id="confirmation-card" class="glass-panel-crimson corner-brackets confirmation-card">
+          <div class="conf-icon-circle">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+
+          <div class="section-label" style="color: #10b981; margin-bottom: 8px;">
+            <span class="beacon" style="background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+            <span>TRANSMISSION CONFIRMED // APPLICATION LOGGED</span>
+          </div>
+
+          <h3 style="font-size: 28px; margin-bottom: 12px;">APPLICATION RECEIVED, CADET.</h3>
+          <p style="color: var(--titanium-300); font-size: 15px; max-width: 560px; margin: 0 auto 24px;">
+            Your recruitment dossier has been safely transmitted to the Avengers Club Personnel Board. We review every application on a rolling basis.
+          </p>
+
+          <!-- Generated Cadet Dossier Pass -->
+          <div class="dossier-pass-box">
+            <div class="pass-row">
+              <span class="pass-label">DOSSIER REF ID:</span>
+              <span id="conf-ref-id" class="pass-val text-glow-cyan">AVG-2026-9281-TEC</span>
+            </div>
+            <div class="pass-row">
+              <span class="pass-label">CADET NAME:</span>
+              <span id="conf-name" class="pass-val">Candidate</span>
+            </div>
+            <div class="pass-row">
+              <span class="pass-label">PRIMARY DIVISION:</span>
+              <span id="conf-div" class="pass-val" style="color: var(--crimson-core);">Tech Lab</span>
+            </div>
+            <div class="pass-row">
+              <span class="pass-label">DEPARTMENT:</span>
+              <span id="conf-dept" class="pass-val">Engineering</span>
+            </div>
+            <div class="pass-row">
+              <span class="pass-label">SUBMISSION TIME:</span>
+              <span id="conf-time" class="pass-val">Just now</span>
+            </div>
+          </div>
+
+          <!-- Disclaimer -->
+          <div style="padding: 12px; background: rgba(5, 7, 10, 0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 11px; color: var(--titanium-400); max-width: 540px; margin: 0 auto 28px; text-align: left;">
+            <strong>DEMO NOTICE:</strong> Application recorded client-side in localStorage. In production deployment, connect this endpoint to Supabase, Firebase, or University Webhook.
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;">
+            <button id="btn-download-pass" class="btn btn-primary clip-chamfer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>DOWNLOAD DOSSIER PASS</span>
+            </button>
+            <button id="btn-reset-form" class="btn btn-secondary clip-chamfer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+              <span>SUBMIT ANOTHER TRANSMISSION</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Application Form -->
+        <form id="recruitment-form" class="glass-panel corner-brackets recruitment-form" novalidate>
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 16px; margin-bottom: 24px;">
+            <span style="font-family: var(--font-mono); font-size: 12px; color: #ffffff; font-weight: 700; letter-spacing: 0.1em;">
+              CADET ENLISTMENT DOSSIER // SECURE TRANSMISSION
+            </span>
+            <span style="font-family: var(--font-mono); font-size: 10px; color: var(--crimson-core); font-weight: 700;">
+              * MANDATORY FIELDS
+            </span>
+          </div>
+
+          <!-- Row 1: Full Name & Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Maya Lin" required />
+              <div id="err-fullName" class="error-text"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">College Email <span class="req">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="e.g. mlin@campus.edu" required />
+              <div id="err-email" class="error-text"></div>
+            </div>
+          </div>
+
+          <!-- Row 2: Department & Year -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="department" class="form-label">Department / Major <span class="req">*</span></label>
+              <select id="department" class="form-control" required>
+                <option value="" disabled selected>Select your academic department</option>
+                <option value="Computer Science & Engineering">Computer Science &amp; Engineering</option>
+                <option value="Design, Fine Arts & Media">Design, Fine Arts &amp; Media</option>
+                <option value="Business & Economics">Business &amp; Economics</option>
+                <option value="Mechanical / Aerospace Engineering">Mechanical / Aerospace Engineering</option>
+                <option value="Electrical & Electronics">Electrical &amp; Electronics</option>
+                <option value="Biomedical & Natural Sciences">Biomedical &amp; Natural Sciences</option>
+                <option value="Liberal Arts & Communications">Liberal Arts &amp; Communications</option>
+                <option value="Other Department">Other Department</option>
+              </select>
+              <div id="err-department" class="error-text"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="yearOfStudy" class="form-label">Year of Study <span class="req">*</span></label>
+              <select id="yearOfStudy" class="form-control" required>
+                <option value="" disabled selected>Select your current year</option>
+                <option value="1st Year (Freshman)">1st Year (Freshman)</option>
+                <option value="2nd Year (Sophomore)">2nd Year (Sophomore)</option>
+                <option value="3rd Year (Junior)">3rd Year (Junior)</option>
+                <option value="4th Year (Senior)">4th Year (Senior)</option>
+                <option value="Graduate / Postgrad">Graduate / Postgrad</option>
+              </select>
+              <div id="err-yearOfStudy" class="error-text"></div>
+            </div>
+          </div>
+
+          <!-- Row 3: Division Selector Chips -->
+          <div class="form-group">
+            <label class="form-label">Primary Operational Division <span class="req">*</span></label>
+            <div class="division-chips-grid">
+              <div class="division-chip" data-division="Tech Lab">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-01</div>
+                <strong>Tech Lab</strong> (Coding &amp; AI)
+              </div>
+              <div class="division-chip" data-division="Game Arena">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-02</div>
+                <strong>Game Arena</strong> (Esports)
+              </div>
+              <div class="division-chip" data-division="Creative Studio">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-03</div>
+                <strong>Creative Studio</strong> (Design &amp; 3D)
+              </div>
+              <div class="division-chip" data-division="Event Operations">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-04</div>
+                <strong>Event Operations</strong> (Logistics)
+              </div>
+              <div class="division-chip" data-division="Community Impact">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-05</div>
+                <strong>Community Impact</strong> (STEM)
+              </div>
+              <div class="division-chip" data-division="Strategy Room">
+                <div style="font-size: 9px; color: var(--titanium-500); margin-bottom: 2px;">SEC-06</div>
+                <strong>Strategy Room</strong> (Leadership)
+              </div>
+            </div>
+            <div id="err-division" class="error-text"></div>
+          </div>
+
+          <!-- Row 4: Skills -->
+          <div class="form-group">
+            <label for="skills" class="form-label">Skills or Prior Experience <span style="color: var(--titanium-500); font-weight: normal;">(Optional)</span></label>
+            <input type="text" id="skills" class="form-control" placeholder="e.g. Python, Figma, Unreal Engine, Photography, Event Hosting, or Just a Huge Enthusiasm to Learn" />
+          </div>
+
+          <!-- Row 5: Motivation Statement -->
+          <div class="form-group">
+            <label for="whyJoin" class="form-label">Why Do You Want to Join Avengers Club? <span class="req">*</span></label>
+            <textarea id="whyJoin" rows="4" class="form-control" placeholder="Tell us what drives you, what project you dream of building, or what you hope to experience as part of this initiative..." required></textarea>
+            <div id="err-whyJoin" class="error-text"></div>
+          </div>
+
+          <!-- Row 6: Agreement Checkbox -->
+          <div class="form-group" style="margin-bottom: 28px;">
+            <label class="checkbox-label">
+              <input type="checkbox" id="agreePrivacy" required />
+              <span>I acknowledge that I have read the <strong>Avengers Club Recruitment Privacy Notice</strong> and agree to uphold collegiate integrity, teamwork ethics, and active participation.</span>
+            </label>
+            <div id="err-agreePrivacy" class="error-text" style="margin-left: 24px;"></div>
+          </div>
+
+          <!-- Submit Bar -->
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--titanium-400);">
+              SYSTEM STATUS: <span style="color: #ffffff; font-weight: 700;">STANDBY // READY</span>
+            </div>
+            <button type="submit" id="btn-submit-form" class="btn btn-primary clip-chamfer">
+              <span>TRANSMIT APPLICATION // ENLIST</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FAQ & CONTACT — COMMUNICATIONS
+       ====================================================================== -->
+  <section id="faq" class="section" aria-label="Frequently Asked Questions and Contact Information">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 760px; margin: 0 auto 60px;">
+        <div class="section-label">
+          <span class="beacon"></span>
+          <span>COMMUNICATIONS // INTEL &amp; DISPATCH</span>
+        </div>
+        <h2 class="section-headline" style="margin: 0 auto 16px;">
+          FREQUENTLY ASKED <span class="text-glow-cyan">QUESTIONS.</span>
+        </h2>
+        <p style="font-size: 15px; color: var(--titanium-400);">
+          Everything you need to know about enlisting in the Avengers Club initiative, expectations, and selection.
+        </p>
+      </div>
+
+      <div class="faq-contact-grid">
+        <!-- FAQ Accordion (Left) -->
+        <div class="faq-accordion-group">
+          <!-- Item 1 -->
+          <div class="glass-panel corner-brackets accordion-item open">
+            <button class="accordion-header" aria-expanded="true">
+              <span><span class="font-mono text-glow-cyan" style="margin-right: 8px;">01 //</span> Who can join the Avengers Club?</span>
+              <span class="acc-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              Any actively enrolled college student is welcome to apply, regardless of your academic major, background, or year of study. We value enthusiasm, curiosity, and commitment over predetermined titles.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="glass-panel corner-brackets accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span><span class="font-mono text-glow-cyan" style="margin-right: 8px;">02 //</span> Do I need prior experience or technical skills?</span>
+              <span class="acc-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              No! We recruit based on passion and growth mindset. While our advanced squads take on cutting-edge engineering and design projects, we offer comprehensive cadet onboarding, mentorship tracks, and hands-on workshops for beginners.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="glass-panel corner-brackets accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span><span class="font-mono text-glow-cyan" style="margin-right: 8px;">03 //</span> How much time is required per week?</span>
+              <span class="acc-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              General cadets typically invest 2 to 4 hours per week attending division workshops and squad catch-ups. Core project leads may spend 5 to 8 hours during active tournament or deployment cycles. We strictly uphold academic priority.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="glass-panel corner-brackets accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span><span class="font-mono text-glow-cyan" style="margin-right: 8px;">04 //</span> How do I apply?</span>
+              <span class="acc-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              Fill out the 3-minute recruitment form on this portal. Our personnel committee reviews every dossier within 5 business days, followed by a friendly coffee chat or virtual alignment session to find your best fit squad.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="glass-panel corner-brackets accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span><span class="font-mono text-glow-cyan" style="margin-right: 8px;">05 //</span> When will selected applicants hear back?</span>
+              <span class="acc-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              Notifications are dispatched on a rolling weekly basis during active recruitment periods. Every applicant receives a response and personalized feedback via their college email.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tactical Contact Card (Right) -->
+        <div class="glass-panel corner-brackets contact-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="beacon" style="background: var(--crimson-core); box-shadow: 0 0 8px var(--crimson-core);"></span>
+              <span style="font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: #ffffff;">CAMPUS COMMAND HQ</span>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 10px; color: #10b981;">ONLINE</span>
+          </div>
+
+          <div style="padding: 10px; background: rgba(5, 7, 10, 0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 10px; color: var(--titanium-400); margin-bottom: 20px;">
+            DISCLAIMER: Fictional campus dispatch details for collegiate project simulation.
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-row-lbl">
+              <span>DISPATCH EMAIL:</span>
+              <button id="btn-copy-email" class="btn-copy" aria-label="Copy dispatch email">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>COPY</span>
+              </button>
+            </div>
+            <div class="contact-row-val">
+              <a href="mailto:recruitment@avengers-initiative.campus.edu">recruitment@avengers-initiative.campus.edu</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-row-lbl">TACTICAL HOTLINE:</div>
+            <div class="contact-row-val">+1 (555) 019-AVNG</div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-row-lbl">HEADQUARTERS DECK:</div>
+            <div class="contact-row-val" style="font-family: var(--font-body); font-size: 12px; font-weight: normal; color: var(--titanium-200);">
+              Nexus Innovation Center, Deck 04, Room 404, Campus Science &amp; Tech Complex
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-row-lbl">OPERATIONAL WINDOW:</div>
+            <div class="contact-row-val" style="font-size: 11px; color: var(--titanium-300);">
+              Mon – Fri: 09:00 – 21:00 EST // Weekend Operations By Alert
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; border-top: 1px solid var(--border-subtle); padding-top: 18px;">
+            <a href="#recruitment" class="btn btn-secondary clip-chamfer" style="width: 100%;">
+              <span>TRANSMIT INQUIRY TO HQ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div>
+          <div class="brand-link" style="margin-bottom: 16px;">
+            <div class="brand-shield" style="width: 32px; height: 32px;">
+              <svg viewBox="0 0 100 100">
+                <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#080d16" stroke="#00f0ff" stroke-width="4"></polygon>
+                <path d="M50 20 L72 76 L58 76 L53 62 L42 62 L39 76 L28 76 Z M50 34 L45 52 L52 52 Z" fill="#ffffff"></path>
+                <polygon points="50,14 55,22 45,22" fill="#ff1e56"></polygon>
+              </svg>
+            </div>
+            <span style="font-family: var(--font-display); font-size: 18px; font-weight: 800; color: #ffffff;">
+              AVENGERS <span style="color: var(--cyan-core);">CLUB</span>
+            </span>
+          </div>
+
+          <p style="font-size: 12px; color: var(--titanium-400); line-height: 1.7; max-width: 320px; margin-bottom: 14px;">
+            The premier collegiate student innovation collective. Engineering autonomous prototypes, producing cinema-grade media, dominating esports arenas, and empowering our campus community.
+          </p>
+
+          <div style="font-family: var(--font-mono); font-size: 10px; color: var(--cyan-core); display: flex; align-items: center; gap: 6px;">
+            <span class="beacon"></span>
+            <span>CYBER-SHIELD OMEGA-1 ACTIVE</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#activities">ACTIVITIES</a></li>
+            <li><a href="#team">OUR TEAM</a></li>
+            <li><a href="#recruitment">RECRUITMENT</a></li>
+            <li><a href="#faq">FAQ &amp; CONTACT</a></li>
+          </ul>
+        </div>
+
+        <!-- Divisions -->
+        <div class="footer-col">
+          <h4>DIVISIONS</h4>
+          <ul>
+            <li><a href="#activities">TECH LAB // HARDWARE</a></li>
+            <li><a href="#activities">GAME ARENA // ESPORTS</a></li>
+            <li><a href="#activities">CREATIVE STUDIO // MEDIA</a></li>
+            <li><a href="#activities">EVENT OPERATIONS // EXPO</a></li>
+            <li><a href="#activities">COMMUNITY IMPACT // STEM</a></li>
+            <li><a href="#activities">STRATEGY ROOM // TACTICS</a></li>
+          </ul>
+        </div>
+
+        <!-- Channels -->
+        <div class="footer-col">
+          <h4>CHANNELS</h4>
+          <ul>
+            <li><a href="https://discord.gg/avengers-club-demo" target="_blank" rel="noreferrer">DISCORD SERVER</a></li>
+            <li><a href="https://github.com/avengers-club-initiative" target="_blank" rel="noreferrer">GITHUB ORG</a></li>
+            <li><a href="mailto:recruitment@avengers-initiative.campus.edu">DIRECT DISPATCH</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AVENGERS CLUB. All rights reserved. Fictional collegiate student project.
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <span>NOT AFFILIATED WITH MARVEL OR DISNEY</span>
+          <button id="btn-scroll-top" class="btn btn-secondary clip-chamfer" style="padding: 6px 12px; font-size: 10px;" aria-label="Scroll back to top">
+            <span>TOP</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
